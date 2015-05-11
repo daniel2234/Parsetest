@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [Parse setApplicationId:@"0CiXPKXUgjcwogOEFkFV6zpIkYuYeVQv2CPWv3Cm" clientKey:@"WLFU4gKQwlGhMTyTTPV2cDXn9DTdF4mVYavtnnDV"];
+    PFObject *userObject = [PFObject objectWithClassName:@"UserObject"];
+    [userObject setObject:@"bar" forKey:@"foo"];
+    [userObject save];
+    
     return YES;
 }
 

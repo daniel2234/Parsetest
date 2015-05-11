@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  MatchedUp
 //
 //  Created by Daniel Kwiatkowski on 2015-05-11.
@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-
